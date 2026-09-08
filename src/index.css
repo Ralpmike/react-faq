@@ -13,6 +13,20 @@
   --Purple-950: hsl(292, 42%, 14%);
 }
 
+.count{
+  font-size: 2rem;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--White);
+  font-size: 2rem;
+}
+
 li{
   list-style-type: none;
 }
@@ -66,3 +80,13 @@ h2 {
   cursor: pointer;
   color: var(--Purple-950);
 } 
+
+
+.counter{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-block: 2rem;
+  min-height: 100vh;
+}

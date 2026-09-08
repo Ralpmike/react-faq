@@ -1,4 +1,4 @@
-import { Faq } from "./App";
+import Faq from "./Faq";
 
 export default function FaqCard() {
   return (

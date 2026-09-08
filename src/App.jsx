@@ -1,83 +1,66 @@
 import FaqCard from "./FaqCard";
+import FaqWrapper from "./FaqWrapper";
 
-const faqs = [
-  {
-    id: 1,
-    question: "What is Frontend Mentor, and how will it help me?",
-    answer:
-      "Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.",
-  },
-  {
-    id: 2,
-    question: "Is Frontend Mentor free?",
-    answer:
-      "Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.",
-  },
-  {
-    id: 3,
-    question: "Can I use Frontend Mentor projects in my portfolio?",
-    answer:
-      "Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!",
-  },
-  {
-    id: 4,
-    question: "How can I get help if I'm stuck on a Frontend Mentor challenge?",
-    answer:
-      "The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.",
-  },
-];
+// import { useState } from "react";
 
-function FaqWrapper({ children }) {
-  return (
-    <div className="faq-wrapper">
-      <img
-        src="/images/background-pattern-desktop.svg"
-        alt=""
-        className="bg-img"
-      />
-      <div>{children}</div>
-    </div>
-  );
-}
+//Handling Events in React
 
-export function Faq() {
-  return (
-    <>
-      {faqs.map((faq) => {
-        console.log(typeof faq.id);
-        return (
-          <li key={faq.id}>
-            <h2>
-              {faq.question} <Button clicked={faq.id === 1 ? true : false} />
-            </h2>
-            {faq.id === 1 ? <p>{faq.answer}</p> : ""}
-          </li>
-        );
-      })}
-    </>
-  );
-}
-
-
+//State
+//useState
+//useReducer
+//useContext
 
 function App() {
+  //  function click(){
+  //   alert("You Clicked!")
+  // }
+
+  // let [value, setValue] = useState(0)
+
+
+  // let count = 0
+
+  // function increment(){
+  //   // count++
+  //   // const x = value++
+  //   // console.log(x)
+  //   // value = value + 1
+  //   setValue(value + 1)
+  //   setValue(value + 1)
+  //   setValue(value + 1)
+  //   setValue(value + 1)
+  //   setValue(value + 1)
+  //   setValue((preValue) => preValue + 1)
+  //   setValue((preValue) => preValue + 1)
+  //   setValue(48)
+  //   // setValue(x)
+  // }
+  
+  
+  
+  // function decrement(){
+  //   // value = value - 1
+  //   // value--
+
+  //   setValue(value - 1)
+  //   // setValue(value--)
+  // }
+
   return (
+    // <div className="App" >
+    //   <button onClick={click}>Click</button>
+    // <div className="counter">
+    //   <button onClick={increment}>Increment</button>
+
+    //   <p className="count">{value}</p>
+
+    //   <button onClick={decrement}>Decrement</button>
+    // </div>
+    // </div>
     <FaqWrapper>
       <FaqCard />
     </FaqWrapper>
   );
-}
-
-function Button({ clicked }) {
-  const url = "/images/icon-"
-  return (
-    <img
-      src={`${url}${clicked ? "minus" : "plus"}.svg`}
-      alt=""
-    />
-  );
-
-  
 }
 
 export default App;
