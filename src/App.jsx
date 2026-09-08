@@ -1,3 +1,4 @@
+import Accordion from "./components/Accordion";
 import FaqCard from "./FaqCard";
 import FaqWrapper from "./FaqWrapper";
 
@@ -17,7 +18,6 @@ function App() {
 
   // let [value, setValue] = useState(0)
 
-
   // let count = 0
 
   // function increment(){
@@ -35,9 +35,7 @@ function App() {
   //   setValue(48)
   //   // setValue(x)
   // }
-  
-  
-  
+
   // function decrement(){
   //   // value = value - 1
   //   // value--
@@ -57,9 +55,12 @@ function App() {
     //   <button onClick={decrement}>Decrement</button>
     // </div>
     // </div>
-    <FaqWrapper>
-      <FaqCard />
-    </FaqWrapper>
+    <>
+      <FaqWrapper>
+        <FaqCard />
+      </FaqWrapper>
+      <Accordion />
+    </>
   );
 }
 
